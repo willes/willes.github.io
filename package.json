@@ -2,7 +2,7 @@
   "name": "icodex-next",
   "version": "0.0.0",
   "private": true,
-  "homepage": "https://willes.github.io/blog",
+  "homepage": "https://willes.github.io",
   "scripts": {
     "docusaurus": "docusaurus",
     "start": "docusaurus start",

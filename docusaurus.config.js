@@ -10,14 +10,15 @@ const path = require("path");
 const config = {
   title: "icodex",
   tagline: "frontend development cookbook",
-  url: "https://willes.github.io",
-  baseUrl: "/blog",
+  url: "https://willes.github.io/",
+  baseUrl: "/",
   deploymentBranch: "gh-pages",
   onBrokenLinks: "throw",
   onBrokenMarkdownLinks: "warn",
   favicon: "img/favicon.ico",
-  organizationName: "wood3n",
-  projectName: "blog",
+  organizationName: "willes",
+  projectName: "willes.github.io",
+  trailingSlash: false,
   plugins: [
     "@docusaurus/theme-live-codeblock",
     path.resolve(__dirname, "./src/plugins/webpackConfig.js"),
@@ -43,10 +44,7 @@ const config = {
         docs: {
           sidebarPath: require.resolve("./sidebars.js"),
           remarkPlugins: [math],
-          rehypePlugins: [katex],
-          editUrl: ({ docPath }) => {
-            return `https://github.com/willes/blog/tree/master/docs/${docPath}`;
-          },
+          rehypePlugins: [katex]
         },
         blog: {
           // blog作为主页
@@ -173,7 +171,7 @@ const config = {
             docId: "tools/git",
           },
           {
-            href: "https://github.com/willes/blog",
+            href: "https://github.com/willes/willes.github.io",
             position: "right",
             // custom logo in custom.css
             className: "header-github-link",
